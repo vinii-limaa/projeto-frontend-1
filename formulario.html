@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Projeto 1 - FORMULÁRIO</title>
+</head>
+
+<body>
+  <img src="img/ods14.jpg" alt="Logo" class="logo">
+  <div class="container">
+    <nav>
+      <header>
+        <h1 id="title">FORMULÁRIO DE INSCRIÇÃO</h1>
+      </header>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="formulario.html">Formulário</a>
+      </div>
+    </nav>
+  </div>
+
+  <form>
+    <label for="username">Nome Completo:</label><br>
+    <input type="text" id="username" name="username" placeholder="" required><br><br>
+
+    <label for="idade">Idade:</label><br>
+    <input type="number" min="18" max="120" id="idade" name="idade" required><br><br>
+
+    <label for="interesse">Qual ODS você tem mais interesse?</label><br>
+    <select name="interesse" id="interesse">
+      <option value="ODS1"> ODS 1 – Erradicação da pobreza</option>
+      <option value="ODS2">ODS 2 – Fome zero e agricultura sustentável</option>
+      <option value="ODS3">ODS 3 – Saúde e bem-estar</option>
+      <option value="ODS4">ODS 4 – Educação de qualidade</option>
+      <option value="ODS5">ODS 5 – Igualdade de gênero</option>
+      <option value="ODS6">ODS 6 – Água potável e saneamento</option>
+      <option value="ODS7">ODS 7 – Energia limpa e acessível</option>
+      <option value="ODS8">ODS 8 – Trabalho decente e crescimento econômico</option>
+      <option value="ODS9">ODS 9 – Indústria, inovação e infraestrutura</option>
+      <option value="ODS10">ODS 10 – Redução das desigualdades</option>
+      <option value="ODS11">ODS 11 – Cidades e comunidades sustentáveis</option>
+      <option value="ODS12">ODS 12 – Consumo e produção responsáveis</option>
+      <option value="ODS13">ODS 13 – Ação contra a mudança global do clima</option>
+      <option value="ODS14">ODS 14 – Vida na água</option>
+      <option value="ODS15">ODS 15 – Vida terrestre</option>
+      <option value="ODS16">ODS 16 – Paz, Justiça e Instituições Eficazes</option>
+      <option value="ODS17">ODS 17 – Parcerias e meios de implementação</option>
+    </select><br><br>
+
+    <label for="motivo">Por qual motivo você tem interesse na ODS escolhida?</label><br>
+    <textarea id="motivo" class="motivo"></textarea><br><br>
+
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" placeholder="insira um e-mail válido" required><br><br>
+
+    <label for="senha">Senha:</label><br>
+    <input type="password" id="senha" name="senha" required><br><br>
+
+    <input id="btnEnviar" name="btnEnviar" type="submit" value="Enviar">
+  </form>
+
+  <footer>
+    <p>Objetivo de Desenvolvimento Sustentável (ODS) 14</p>
+  </footer>
+
+</body>
+
+</html>
